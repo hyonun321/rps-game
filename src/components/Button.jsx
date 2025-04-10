@@ -18,7 +18,6 @@ function Button({ onClick, choice, disabled, image, text, type }) {
         return '';
     }
   };
-  console.log(choice,type,disabled,disabled && choice !== type)
   return (
     <button 
       className={`${styles.choiceButton} ${getButtonClass()}`}
