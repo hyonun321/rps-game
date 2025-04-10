@@ -1,0 +1,61 @@
+.card {
+    width: 280px;
+    border-radius: 15px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    background-color: white;
+    border: 3px solid;
+    transition: all 0.3s ease;
+    position: relative;
+  }
+  
+  .userCard {
+    border-color: #4a90e2;
+  }
+  
+  .computerCard {
+    border-color: #f5a623;
+  }
+  
+  .cardTitle {
+    font-size: 22px;
+    margin-bottom: 30px;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .imageContainer {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+  .choiceImage {
+    max-width: 80%;
+    max-height: 80%;
+  }
+  
+  .resultText {
+    font-size: 18px;
+    font-weight: bold;
+    color: #4a90e2;
+  }
+  
+  .win {
+    background-color: #92c4f9;
+  }
+  
+  .lose {
+    opacity: 0.5;
+    filter:grayscale(10%);
+  }
+  
+  .draw {
+    background-color: #f0f0f0;
+  }
