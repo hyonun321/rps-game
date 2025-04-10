@@ -53,6 +53,10 @@ function App() {
     setResult(null);
   };
 
+  const play = (choice) => {
+    handleUserChoice(choice);
+  };
+
   return (
     <div className={styles.container}>
       <h1 className={styles.gameTitle}>가위바위보 게임</h1>
@@ -69,7 +73,7 @@ function App() {
         
         <div className={styles.buttonsContainer}>
           <Button
-            onClick={handleUserChoice}
+            onClick={play}
             choice="scissors"
             disabled={userChoice !== null}
             image={scissorsImg}
@@ -78,7 +82,7 @@ function App() {
           />
           
           <Button
-            onClick={handleUserChoice}
+            onClick={play}
             choice="rock"
             disabled={userChoice !== null}
             image={rockImg}
@@ -87,7 +91,7 @@ function App() {
           />
           
           <Button
-            onClick={handleUserChoice}
+            onClick={play}
             choice="paper"
             disabled={userChoice !== null}
             image={paperImg}
