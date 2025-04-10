@@ -97,13 +97,17 @@ function App() {
           
           <div className={styles.resultActions}>
             <div className={styles.resultText}>{userChoice === null ? "?" : result}</div>
-            {userChoice && (
-              <Button
-                onClick={resetGame}
-                text="다시하기"
-                type="reset"
-              />
-            )}
+            <div className={styles.resetButtonContainer}>
+              {userChoice ? (
+                <Button
+                  onClick={resetGame}
+                  text="다시하기"
+                  type="reset"
+                />
+              ) : (
+                <div className={styles.emptySpace}></div>
+              )}
+            </div>
           </div>
         </div>
         
